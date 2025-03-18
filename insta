@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #dbdbdb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            width: 100px;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            width: 300px;
+            border-radius: 20px;
+            border: 1px solid #dbdbdb;
+        }
+
+        .header-icons img {
+            width: 24px;
+            margin: 0 10px;
+        }
+
+        /* Feed de Postagens */
+        .feed {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .post {
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .post-header img {
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        .post-header .user-name {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .post-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .post-footer {
+            padding: 10px;
+        }
+
+        .post-footer .icons img {
+            width: 24px;
+            margin-right: 10px;
+        }
+
+        .post-footer .likes {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram logo">
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar">
+        </div>
+        <div class="header-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Instagram_Logo_2022.svg" alt="Messenger">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Instagram_Mark_2016_Logo.png" alt="Notificação">
+        </div>
+    </header>
+
+    <!-- Feed de Postagens -->
+    <div class="feed">
+        <!-- Postagem 1 -->
+        <div class="post">
+            <div class="post-header">
+                <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Usuário 1">
+                <span class="user-name">Usuário 1</span>
+            </div>
+            <img class="post-image" src="https://www.w3schools.com/w3images/nature.jpg" alt="Imagem Postada">
+            <div class="post-footer">
+                <div class="icons">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Instagram_Logo_2022.svg" alt="Curtir">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Instagram_Logo_2022.svg" alt="Comentar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Instagram_Logo_2016.svg" alt="Compartilhar">
+                </div>
+                <p class="likes">500 Curtidas</p>
+                <p>Descrição da postagem: Um lugar lindo! 🌅</p>
+            </div>
+        </div>
+
+        <!-- Postagem 2 -->
+        <div class="post">
+            <div class="post-header">
+                <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Usuário 2">
+                <span class="user-name">Usuário 2</span>
+            </div>
+            <img class="post-image" src="https://www.w3schools.com/w3images/lights.jpg" alt="Imagem Postada">
+            <div class="post-footer">
+                <div class="icons">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Instagram_Logo_2022.svg" alt="Curtir">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Instagram_Logo_2022.svg" alt="Comentar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Instagram_Logo_2016.svg" alt="Compartilhar">
+                </div>
+                <p class="likes">300 Curtidas</p>
+                <p>Descrição da postagem: Noite iluminada! 💡</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
